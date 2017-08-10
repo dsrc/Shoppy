@@ -1,0 +1,1 @@
+declare var all_products:any;

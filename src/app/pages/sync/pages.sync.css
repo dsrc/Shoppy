@@ -1,0 +1,24 @@
+.prod-sync-toolbar{
+    background-color: #4a9;
+    height: 35px;
+    padding: 0 5px;
+    line-height: 35px;
+}
+
+.prod-sync-toolbar .back{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.prod-sync-toolbar .page-title{
+    text-align: right;
+    float: right;
+    color: #FFF;
+}
+
+
+.sync-btn{
+    text-align: center;
+    margin: auto;
+    display: block;
+}

@@ -1,0 +1,40 @@
+<div class="prod-search-toolbar">
+    <a class="sync" routerLink="/syncProduct" routerLinkActive="active" >Sync</a>    
+</div>
+<div>
+    <div class="prod-search-txt">
+        <input type="text" #txtFname [(ngModel)]="queryString" id="search" placeholder="Search to type">
+    </div>
+    <ul class="products" *ngIf = "products && products.length > 0">
+        <li *ngFor="let product of products | searchfilter: 'Name' : queryString" 
+        [class.selected]="product === selectedProduct"
+        (click)="onSelect(product)">
+            <div *ngIf = "product != null && product.info != null">
+                <div class="p-header">
+                    <span class="p-thumb">
+                        <img src="https://webshop-staging.aphixsoftware.com/{{product.info.Image1Src}}" />
+                    </span> 
+                    <span class="p-title">
+                        <div>{{product.info.Name}}</div>
+                    </span>
+                </div>
+                <div class="p-info">
+                        <span class="p-tablecell p-left"><div>Avai..</div>
+                            <label class="badge">{{product.info.Pricing.Available}}</label>
+                        </span>
+                        <span class="p-tablecell p-middle"><div>SKU</div>
+                            <label class="badge">{{product.info.SKU}}</label>
+                        </span>
+                        <span class="p-tablecell p-right"><div>&euro;</div>
+                            <label class="badge">{{product.info.Pricing.Selling1}}</label>
+                        </span>     
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div *ngIf = "!products || products.length == 0">
+        <p>
+            No Products available, Please use Sync.
+        </p>
+    </div>
+</div>

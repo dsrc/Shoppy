@@ -1,0 +1,14 @@
+<div class="prod-sync-toolbar">
+    <a class="back" href="" (click)="goBack()">Back</a>
+</div>
+<div class="prod-sync-container">
+    <br/>
+    <br/>
+    <input class="sync-btn" type="button" (click)="doSync()" value="Sync Products"/>
+
+    <br/>
+    <br/>
+
+    <div>Products.js last synced on:</div>    
+    <b style="text-align: center">{{lastSyncTime}}</b>
+</div> 

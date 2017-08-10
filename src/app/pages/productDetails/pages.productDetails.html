@@ -1,0 +1,21 @@
+<div class="prod-detail-toolbar">
+    <a class="back" href="" (click)="onBack()">Back</a>
+    <span class="page-title" *ngIf="selectedProduct != null">SKU - {{selectedProduct.info.SKU}}</span>
+</div>
+<div class="prod-detail-container">
+    <div *ngIf="selectedProduct != null">
+        <div class="prod-detail-title">
+            <h2>{{selectedProduct.info.Name}}</h2>
+            <span>Updated on: {{selectedProduct.info.LastUpdated}}</span>
+        </div>
+        <div class="prod-detail-details">
+            <div class="prod-images">
+                <img src="https://webshop-staging.aphixsoftware.com/{{selectedProduct.info.Image1Src}}" /> 
+            </div>
+            <div class="prod-itms">
+
+            </div>
+            <div class="prod-desc">{{selectedProduct.info.Text}}</div>
+        </div>
+    </div>
+</div>

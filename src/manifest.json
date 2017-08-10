@@ -1,0 +1,14 @@
+{
+  "name": "Shoppy",
+  "short_name": "Shoppy",
+  "url": "/index.html",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple Shop in your hand.",
+  "icons": [{
+    "src": "favicon.ico",
+    "sizes": "48x48",
+    "type": "image/png"
+  }]
+}

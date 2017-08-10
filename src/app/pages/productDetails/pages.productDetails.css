@@ -1,0 +1,52 @@
+.prod-detail-toolbar{
+    background-color: #4a9;
+    height: 35px;
+    padding: 0 5px;
+    line-height: 35px;
+}
+
+.prod-detail-toolbar .back{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.prod-detail-toolbar .page-title{
+    text-align: right;
+    float: right;
+    color: #FFF;
+}
+
+.prod-detail-container{
+    padding: 5px 10px;
+}
+
+.prod-detail-title h2{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.prod-detail-title span{
+    font-size: 0.85em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #888;
+}
+
+.prod-images img{
+    height: 200px;
+    text-align: center;    
+    max-width: 100%;
+    display: block;
+    border: 1px solid #aaa;
+    margin: 1em auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.prod-desc{
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    color: #666;
+    text-align: left;
+}
